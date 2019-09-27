@@ -22,10 +22,10 @@ install:
 #  - gcc -dM -E -x c /dev/null
 #  - g++ -dM -E -x c /dev/null
   - cc -dM -E -x c /dev/null
-  - echo "int fnord () __attribute__((visibility("default")));" | cc -x c -
+  - echo 'int fnord () __attribute__((visibility("default")));' | cc -x c -
 
 script:
 #  - gcc -dM -E -x c /dev/null
 #  - g++ -dM -E -x c /dev/null
   - cc -dM -E -x c /dev/null
-  - echo "int fnord () __attribute__((visibility("default")));" | cc -x c -
+  - echo 'int fnord () __attribute__((visibility("default")));' | cc -x c -
